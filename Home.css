@@ -36,8 +36,8 @@ nav a{
     color: white;
     border-bottom: 1px solid white;
     padding: 0 3px   0 3px;
-    font-family:'space Grotesk';
-    font-weight: bold;
+    font-family: monFont;
+    font-size: 18px;
     
 }
 nav a:hover{
@@ -47,9 +47,9 @@ nav a:hover{
 }
 header{
     background-image: url('Assets/Illustrations/Bathome1.png');
-    background-size: cover;
     background-repeat: no-repeat;
     height: 95%;
+    background-size: cover;
     text-align: center;
 
 }
@@ -57,26 +57,26 @@ header{
     border-left: 3px solid    rgba(123, 123, 123, 0.1);
     border-right: 3px groove  rgba(207, 207, 207, 0.1);
     border-top: 3px solid  rgba(171, 171, 171, 0.2);
-    margin-top: 120px;
-    margin-left: 80px;
-    padding: 130px;
+    margin-top: 100px;
+     margin-left: 60px;
+    padding: 130px 130px 100px 130px;
     color: whitesmoke;
     width: 58%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
+    font-family: monFont;
+    font-size: 18px;
 }
 .head_content strong{
-    font-size: 19px;
+    font-size: 18px;
 }
 header .buttons .btn{
-    background-image: linear-gradient(to top right , #f7ecd7, #890008);
+    background-image: linear-gradient(to top right , #eddebf, #890008);
     border: none;
     opacity: .6;
     transition: all .5s;
     padding: 15px;
     margin-right: 25px;
     position: relative;
-    top:-106px;
+    top:-80px;
     left: 13px;
     color: white;
     font-family: myFont;
@@ -87,8 +87,6 @@ header .buttons .btn:hover{
 }
 header  #logo_bat,.buttons .btn, aside img{
     cursor: pointer;
-    font-family: myFont;
-    font-size: 20px;
 }
 header  aside{
     position: fixed;
@@ -97,23 +95,19 @@ header  aside{
     transition: all .5s;
     z-index: 1000;
 }
-header  aside a:hover{
-    transition: all .3s;
-}
+
 header  aside img:not(a img){
     display: block;
-    margin-left: 15px;
+    margin-left: -5px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 header  aside a img{
-    margin-left: -12px;
+    margin-left: -30px;
 }
-header  aside a img:hover{
-    color: rgb(228, 207, 21);
-}
+
 /*------------------- contenu-------------------------  */
-/* Section cinema et allié */
+/* Section cinema */
 .container h1{
     font-family: myFont;
     font-size: 36px;
@@ -124,10 +118,11 @@ div.container .deco{
     
     
 }
+
 div.container{
     border-left: 3px solid    rgba(207, 207, 207, 0.1);
     border-right: 3px groove  rgba(207, 207, 207, 0.1);
-    margin-left: 80px;
+     margin-left: 60px;
     padding-left:40px;
     padding-right: 20px;
     padding-top: 130px;
@@ -138,28 +133,11 @@ div.container{
     margin-top: -80px;
     margin-bottom: 80px;
 }
-div.container5{
-    border-left: 3px solid    rgba(207, 207, 207, 0.1);
-    border-right: 3px groove  rgba(207, 207, 207, 0.1);
-    margin-left: 80px;
-    padding-left:40px;
-    padding-right: 20px;
-  
-    width: 78%;
-    height: 100vh;
+
+div.container p{
+    margin-top: 50px;
     font-family: monFont;
     font-size: 18px;
-    margin-top: 110px;
-    margin-bottom: 80px;
-    
-}
-div.container5 p{
-    margin-top: 70px;
-    
-}
-
-div.container5 p{
-    margin-bottom: 50px;
     
 }
 
@@ -167,7 +145,7 @@ main div.desc {
     margin-top: 20px;
     padding: 0px  15px 5px 0px ;
     text-align: center;
-    font-family: myFont;
+    font-family: monFont;
     font-size: medium;
     
 }
@@ -184,14 +162,75 @@ main .cinema article img:hover, main .nemesis article img:hover,main .alliés ar
     transform: scale(1.3, 1.2);
     margin-bottom: 25px;
 }
+/* section Allié */
+div.container4{
+    border-left: 3px solid    rgba(207, 207, 207, 0.1);
+    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+     margin-left: 60px;
+    padding-left:40px;
+    padding-right: 20px;
+    width: 78%;
+    height: 100vh;
+    font-family: monFont;
+    font-size: 18px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+    
+}
+div.container4 p{
+    margin-bottom: 50px;
+    font-family: monFont;
+    font-size: 18px;
+    
+}
+
 /* section justice */
 
 img.justice{
     margin-left: -160px;
     
 }
-
- div.card{
+div.container5{
+    border-left: 3px solid    rgba(207, 207, 207, 0.1);
+    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+    margin-left: 60px;
+    padding-left: 40px;
+    padding-right: 20px;
+    width: 78%;
+    height: 100vh;
+    font-family: monFont;
+    font-size: 18px;
+    margin-top: 330px;
+    margin-bottom: 80px;
+    
+}
+div.container5 h1:not(div.container1 h1,div.container2 h1){ 
+    font-family: myFont;
+    font-size: 36px;
+    position: relative;
+    left:-5px;
+    top: 10px;
+    
+    
+}
+/* section multimédia */
+div.container1 h1{ 
+    font-family: myFont;
+    font-size: 36px;
+}
+div.container1{
+    border-left: 3px solid    rgba(207, 207, 207, 0.1);
+    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+    margin-left: -50px;
+    padding-right: 320px;
+    padding-left: 70px;
+    width: 58%;
+    height: 130vh;
+    font-family: monFont;
+    font-size: 18px;
+    margin-top: -70px;
+}
+div.card{
     background-image: linear-gradient(to bottom right, #292827, #162229);
     border: none;
     border-radius: 0 15px 15px 0 ;
@@ -216,28 +255,20 @@ div.slide .card{
     margin-left: 250px;
     
 }
-div.container1{
-    border-left: 3px solid    rgba(207, 207, 207, 0.1);
-    border-right: 3px groove  rgba(207, 207, 207, 0.1);
-    margin-left: -50px;
-    padding-right: 320px;
-    padding-left: 70px;
-    width: 58%;
-    height: 130vh;
-    font-family: monFont;
-    font-size: 18px;
-    margin-top: -80px;
-}
  #media{
     transition: all .5s;
 }
- #media:hover{
+ div#media:hover{
     box-shadow: 2px 2px 30px 5px #39393991;
     cursor: pointer;
     transform: scale(1.01, 1.01);
 }
 
 /*  contact */
+div.container2 h1{
+    font-family: myFont;
+    font-size: 36px;
+}
 div.container2{
     border-left: 3px solid    rgba(207, 207, 207, 0.1);
     border-right: 3px solid  rgba(207, 207, 207, 0.1);
@@ -245,12 +276,11 @@ div.container2{
     margin-left: -120px;
     padding-right: 315px;
     padding-left: 70px;
-    height: 120vh;
+    height: 150vh;
     font-family: monFont;
     font-size: 18px;
-    margin-top: 80px;
     background-image: linear-gradient(to bottom right, #292827, #162229);
-    width: 78%;
+    width: 84%;
 }
 
 main .contact input, main .contact select{
@@ -267,6 +297,11 @@ main .contact div.group, .btn1 {
     top: auto;
     left: 125px;
 }
+div.group p {
+    font-family: monFont;
+    font-size: 12px;
+    color:rgba(123, 123, 123, 0.982) ;
+}
 main .contact #email{
     margin-top: 20px;
 }
@@ -279,6 +314,11 @@ main .contact input[type="checkbox"]{
 main .contact label{
     font-size: 20px;
     margin-bottom: 30px;
+}
+h4{
+    font-family: monFont;
+    font-size: 20px; 
+    font-weight: lighter;  
 }
 main .contact #message{
 
@@ -331,6 +371,7 @@ main .contact form .btn1:hover{
     transform: scale(1.1, 1.1);
     cursor: pointer;
 }
+
 /* -----------------------------------Footer------------------------------ */
 footer{
     margin-top: 20%;
@@ -364,14 +405,30 @@ footer .info {
     left: 100px;
     top: 30px;
 }
-.container3 #footer_item{
-    position: relative;
-    left: 230px;
-    top: 30px;
+.container3 #footer_item p {
+    padding-top: 50px;
+    padding-left: 50px;
+      
+   }
+.container3 #footer_item p:not(p span) {
+ text-align: center;
+ font-size: 12px;
+ font-family: monFont;
+   
+}
+.container3 #footer_item span {
+    font-weight : lighter;
     font-size: 18px;
+}
+.container3 svg{
+    position: relative;
+    left: 350px;
+    top: -140px;
+    
 }
 .container3 #icon{
     position: relative;
-    left: 130px;
+    left: 150px;
+    margin: 50px;
     
 }
