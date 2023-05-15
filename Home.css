@@ -1,0 +1,377 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color:white;
+}
+/*--------------------- fonts -------------------------- */
+@font-face {
+    font-family: myFont;
+    src: url(fonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: Font;
+    src: url(fonts/SpaceGrotesk-Bold.ttf);
+}
+@font-face {
+    font-family: monFont;
+    src: url(fonts/SpaceGrotesk-Regular.ttf);
+}
+
+/*------------------- header --------------------*/
+#logo_bat{
+    float: left;
+    position: absolute;
+    top: 6%;
+    left: 13%;
+    
+}
+
+nav a{
+    position: relative;
+    top: 40px;
+    left: 325px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 0 3px   0 3px;
+    font-family:'space Grotesk';
+    font-weight: bold;
+    
+}
+nav a:hover{
+    color: rgb(202, 200, 200);
+    border-bottom: 1px solid rgb(202, 200, 200);
+    
+}
+header{
+    background-image: url('Assets/Illustrations/Bathome1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95%;
+    text-align: center;
+
+}
+.head_content{
+    border-left: 3px solid    rgba(123, 123, 123, 0.1);
+    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+    border-top: 3px solid  rgba(171, 171, 171, 0.2);
+    margin-top: 120px;
+    margin-left: 80px;
+    padding: 130px;
+    color: whitesmoke;
+    width: 58%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+.head_content strong{
+    font-size: 19px;
+}
+header .buttons .btn{
+    background-image: linear-gradient(to top right , #f7ecd7, #890008);
+    border: none;
+    opacity: .6;
+    transition: all .5s;
+    padding: 15px;
+    margin-right: 25px;
+    position: relative;
+    top:-106px;
+    left: 13px;
+    color: white;
+    font-family: myFont;
+    font-size: 20px;
+}
+header .buttons .btn:hover{
+    opacity: 1;
+}
+header  #logo_bat,.buttons .btn, aside img{
+    cursor: pointer;
+    font-family: myFont;
+    font-size: 20px;
+}
+header  aside{
+    position: fixed;
+    top: 45%;
+    left: 89%;
+    transition: all .5s;
+    z-index: 1000;
+}
+header  aside a:hover{
+    transition: all .3s;
+}
+header  aside img:not(a img){
+    display: block;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+header  aside a img{
+    margin-left: -12px;
+}
+header  aside a img:hover{
+    color: rgb(228, 207, 21);
+}
+/*------------------- contenu-------------------------  */
+/* Section cinema et allié */
+.container h1{
+    font-family: myFont;
+    font-size: 36px;
+}
+div.container .deco{
+    position:relative; 
+    left:95px;
+    
+    
+}
+div.container{
+    border-left: 3px solid    rgba(207, 207, 207, 0.1);
+    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+    margin-left: 80px;
+    padding-left:40px;
+    padding-right: 20px;
+    padding-top: 130px;
+    width: 78%;
+    height: 100vh;
+    font-family: monFont;
+    font-size: 18px;
+    margin-top: -80px;
+    margin-bottom: 80px;
+}
+div.container5{
+    border-left: 3px solid    rgba(207, 207, 207, 0.1);
+    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+    margin-left: 80px;
+    padding-left:40px;
+    padding-right: 20px;
+  
+    width: 78%;
+    height: 100vh;
+    font-family: monFont;
+    font-size: 18px;
+    margin-top: 110px;
+    margin-bottom: 80px;
+    
+}
+div.container5 p{
+    margin-top: 70px;
+    
+}
+
+div.container5 p{
+    margin-bottom: 50px;
+    
+}
+
+main div.desc {
+    margin-top: 20px;
+    padding: 0px  15px 5px 0px ;
+    text-align: center;
+    font-family: myFont;
+    font-size: medium;
+    
+}
+main .img1{
+    margin: 20px;
+    float: left; 
+}
+
+main .cinema img, main .nemesis img,main .alliés img{
+    cursor: pointer;
+    transition: all .3s;
+}
+main .cinema article img:hover, main .nemesis article img:hover,main .alliés article img:hover{
+    transform: scale(1.3, 1.2);
+    margin-bottom: 25px;
+}
+/* section justice */
+
+img.justice{
+    margin-left: -160px;
+    
+}
+
+ div.card{
+    background-image: linear-gradient(to bottom right, #292827, #162229);
+    border: none;
+    border-radius: 0 15px 15px 0 ;
+    width: 350px;
+    height: 190px;
+    padding: 10px;
+    font-family: monFont;
+    line-height: 14px;
+    font-size: 12px;
+    
+}
+main .multimedia .card span{
+    color: #FFFF00;
+}
+
+
+div.slide img{
+    position: relative;
+    top: -220px;
+}
+div.slide .card{
+    margin-left: 250px;
+    
+}
+div.container1{
+    border-left: 3px solid    rgba(207, 207, 207, 0.1);
+    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+    margin-left: -50px;
+    padding-right: 320px;
+    padding-left: 70px;
+    width: 58%;
+    height: 130vh;
+    font-family: monFont;
+    font-size: 18px;
+    margin-top: -80px;
+}
+ #media{
+    transition: all .5s;
+}
+ #media:hover{
+    box-shadow: 2px 2px 30px 5px #39393991;
+    cursor: pointer;
+    transform: scale(1.01, 1.01);
+}
+
+/*  contact */
+div.container2{
+    border-left: 3px solid    rgba(207, 207, 207, 0.1);
+    border-right: 3px solid  rgba(207, 207, 207, 0.1);
+    border-bottom: 3px solid  rgba(207, 207, 207, 0.1);
+    margin-left: -120px;
+    padding-right: 315px;
+    padding-left: 70px;
+    height: 120vh;
+    font-family: monFont;
+    font-size: 18px;
+    margin-top: 80px;
+    background-image: linear-gradient(to bottom right, #292827, #162229);
+    width: 78%;
+}
+
+main .contact input, main .contact select{
+    background-color:unset;
+    border:none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.418);
+    color:rgba(123, 123, 123, 0.982) ;
+    width: 100%;
+   
+}
+main .contact div.group, .btn1 {
+    margin-bottom: 35px;
+    position: relative;
+    top: auto;
+    left: 125px;
+}
+main .contact #email{
+    margin-top: 20px;
+}
+
+main .contact input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+main .contact label{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+main .contact #message{
+
+    margin-top: 30px;
+}
+main .contact form button:not(.btn1){
+    border: 1px groove linear-gradient(to bottom right, #EDDEBF, #19587D);
+    background-image: linear-gradient(to bottom right, #292827, #162229);
+    padding: 13px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-family: myFont;
+    font-size: 20px;
+
+}
+main .contact .buttons button{
+    border-color: rgba(221, 218, 218, 0.644);
+    border-width: 1px 0px 0px 1px;
+    transition: all .5s;
+    font-family: myFont;
+    font-size: 20px;
+}
+main .contact .buttons button:hover{
+    background-image: linear-gradient(to bottom right, #EDDEBF, #19587D);
+    transform: scale(1.1, 1.1);
+}
+main .contact .btn1{
+    border: none;
+    background-image: linear-gradient(to bottom right, #EDDEBF, #890008);
+    opacity: .6;
+    transition: all .5s;
+    padding: 15px;
+    width: 200px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+main .contact input:focus, select{
+   height: 35px;
+   background-color: white;
+}
+main .contact h1{
+    margin-left: 250px;
+ }
+main .contact form .btn1:hover{
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+/* -----------------------------------Footer------------------------------ */
+footer{
+    margin-top: 20%;
+}
+footer .info {
+    font-size: 10px;
+    float:right;
+    margin-right: 120px;
+    
+   
+}
+:is(footer #icon) img{
+    cursor: pointer;
+}
+
+ .container3{
+    border-left: 3px solid    rgba(207, 207, 207, 0.1);
+    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+    margin-left: -50px;
+    padding-right: 20px;
+    padding-left: 70px;
+    height: 100vh;
+    font-family: monFont;
+    font-size: 18px;
+    width: 97%;
+    margin-top: -1px;
+    
+}
+.container3 img{
+    position: relative;
+    left: 100px;
+    top: 30px;
+}
+.container3 #footer_item{
+    position: relative;
+    left: 230px;
+    top: 30px;
+    font-size: 18px;
+}
+.container3 #icon{
+    position: relative;
+    left: 130px;
+    
+}
