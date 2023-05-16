@@ -25,7 +25,12 @@ body{
     position: absolute;
     top: 6%;
     left: 13%;
+    cursor: pointer;
     
+}
+#logo_bat:hover{
+    -webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+    filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
 }
 
 nav a{
@@ -38,19 +43,17 @@ nav a{
     padding: 0 3px   0 3px;
     font-family: monFont;
     font-size: 18px;
+    cursor:default;
     
 }
-nav a:hover{
-    color: rgb(202, 200, 200);
-    border-bottom: 1px solid rgb(202, 200, 200);
-    
-}
+
 header{
     background-image: url('Assets/Illustrations/Bathome1.png');
     background-repeat: no-repeat;
     height: 95%;
     background-size: cover;
     text-align: center;
+    position: relative;
 
 }
 .head_content{
@@ -72,7 +75,6 @@ header .buttons .btn{
     background-image: linear-gradient(to top right , #eddebf, #890008);
     border: none;
     opacity: .6;
-    transition: all .5s;
     padding: 15px;
     margin-right: 25px;
     position: relative;
@@ -85,26 +87,27 @@ header .buttons .btn{
 header .buttons .btn:hover{
     opacity: 1;
 }
-header  #logo_bat,.buttons .btn, aside img{
-    cursor: pointer;
-}
+
 header  aside{
-    position: fixed;
+    position: absolute;
     top: 45%;
     left: 89%;
-    transition: all .5s;
     z-index: 1000;
+    display: grid;
+    gap: 25px;
+    margin-left: -50px;
+    transform: translate(30%);
 }
 
-header  aside img:not(a img){
-    display: block;
-    margin-left: -5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+header  aside img.ico_reseaux{
+    margin-left: 25px;
 }
-header  aside a img{
-    margin-left: -30px;
+header  aside img:hover{
+-webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
 }
+
 
 /*------------------- contenu-------------------------  */
 /* Section cinema */
@@ -114,15 +117,13 @@ header  aside a img{
 }
 div.container .deco{
     position:relative; 
-    left:95px;
-    
-    
+    left:95px;   
 }
 
 div.container{
     border-left: 3px solid    rgba(207, 207, 207, 0.1);
     border-right: 3px groove  rgba(207, 207, 207, 0.1);
-     margin-left: 60px;
+    margin-left: 60px;
     padding-left:40px;
     padding-right: 20px;
     padding-top: 130px;
@@ -141,26 +142,41 @@ div.container p{
     
 }
 
-main div.desc {
+main div.desc:not(.desc_long) {
     margin-top: 20px;
-    padding: 0px  15px 5px 0px ;
     text-align: center;
     font-family: monFont;
     font-size: medium;
     
 }
+main div.desc .desc_long {
+    margin-top: 10px;
+    text-align: center;
+    font-family: monFont;
+    font-size: medium;
+    margin-left: -55px;
+    
+}
+main .images{
+    margin: 0px;
+    padding: 0px;
+}
 main .img1{
     margin: 20px;
     float: left; 
 }
-
-main .cinema img, main .nemesis img,main .alliés img{
-    cursor: pointer;
-    transition: all .3s;
+main .makedown{
+    margin-right: -20px; 
+    margin-top: 20px;
 }
+main .makedown:hover{
+    margin-top: -5px;
+}
+
 main .cinema article img:hover, main .nemesis article img:hover,main .alliés article img:hover{
-    transform: scale(1.3, 1.2);
-    margin-bottom: 25px;
+    width: 250px;
+    height: 400px;
+    margin-bottom: -15px;
 }
 /* section Allié */
 div.container4{
@@ -220,7 +236,7 @@ div.container1 h1{
 }
 div.container1{
     border-left: 3px solid    rgba(207, 207, 207, 0.1);
-    border-right: 3px groove  rgba(207, 207, 207, 0.1);
+    border-right: 3px solid  rgba(207, 207, 207, 0.1);
     margin-left: -50px;
     padding-right: 320px;
     padding-left: 70px;
@@ -255,13 +271,22 @@ div.slide .card{
     margin-left: 250px;
     
 }
- #media{
-    transition: all .5s;
+.annonce{
+    position: relative;
+    margin-top: -850px;
+    margin-left: -13px;
+    z-index: 0;
 }
- div#media:hover{
-    box-shadow: 2px 2px 30px 5px #39393991;
-    cursor: pointer;
-    transform: scale(1.01, 1.01);
+.annonce:hover{
+   box-shadow: 2px 2px 30px 5px #72717191;
+   z-index: 1000;
+   
+}
+.play{
+    position:relative;
+    top: -285px;
+    left:40%;
+    z-index: 10;
 }
 
 /*  contact */
@@ -279,7 +304,7 @@ div.container2{
     height: 150vh;
     font-family: monFont;
     font-size: 18px;
-    background-image: linear-gradient(to bottom right, #292827, #162229);
+    background-image: linear-gradient(to bottom right,#3f3b32, #021e2e);
     width: 84%;
 }
 
@@ -297,6 +322,7 @@ main .contact div.group, .btn1 {
     top: auto;
     left: 125px;
 }
+
 div.group p {
     font-family: monFont;
     font-size: 12px;
@@ -309,7 +335,7 @@ main .contact #email{
 main .contact input[type="checkbox"]{
     width: 15px;
     height: 15px;
-    cursor: pointer;
+     
 }
 main .contact label{
     font-size: 20px;
@@ -325,8 +351,10 @@ main .contact #message{
     margin-top: 30px;
 }
 main .contact form button:not(.btn1){
-    border: 1px groove linear-gradient(to bottom right, #EDDEBF, #19587D);
-    background-image: linear-gradient(to bottom right, #292827, #162229);
+    border-top: 1px solid #EDDEBF ;
+    border-bottom:1px solid #19587D;
+    border-left: 1px solid #EDDEBF  ;
+    border-right: 1px solid #19587D;
     padding: 13px;
     margin-left: 90px;
     margin-bottom: 10px;
@@ -336,6 +364,15 @@ main .contact form button:not(.btn1){
     font-size: 20px;
 
 }
+main .contact form .btn4{
+    background-color:  #1b3039;
+}
+main .contact form .btn3{
+    background-color:  #22343c;
+}
+main .contact form .btn2{
+    background-color:  #2e3f45;
+}
 main .contact .buttons button{
     border-color: rgba(221, 218, 218, 0.644);
     border-width: 1px 0px 0px 1px;
@@ -344,20 +381,22 @@ main .contact .buttons button{
     font-size: 20px;
 }
 main .contact .buttons button:hover{
-    background-image: linear-gradient(to bottom right, #EDDEBF, #19587D);
-    transform: scale(1.1, 1.1);
+    background-image: linear-gradient(to bottom right, #554f43,#10354a );
+   
 }
 main .contact .btn1{
     border: none;
     background-image: linear-gradient(to bottom right, #EDDEBF, #890008);
-    opacity: .6;
-    transition: all .5s;
     padding: 15px;
     width: 200px;
+    opacity: .6;
     margin-left: 250px;
     margin-bottom: 10px;
     color: white;
     text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: myFont;
 }
 main .contact input:focus, select{
    height: 35px;
@@ -366,11 +405,6 @@ main .contact input:focus, select{
 main .contact h1{
     margin-left: 250px;
  }
-main .contact form .btn1:hover{
-    opacity: 1;
-    transform: scale(1.1, 1.1);
-    cursor: pointer;
-}
 
 /* -----------------------------------Footer------------------------------ */
 footer{
@@ -383,9 +417,7 @@ footer .info {
     
    
 }
-:is(footer #icon) img{
-    cursor: pointer;
-}
+
 
  .container3{
     border-left: 3px solid    rgba(207, 207, 207, 0.1);
@@ -405,6 +437,11 @@ footer .info {
     left: 100px;
     top: 30px;
 }
+.container3 img:hover{
+    -webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+}
+
 .container3 #footer_item p {
     padding-top: 50px;
     padding-left: 50px;
@@ -427,8 +464,12 @@ footer .info {
     
 }
 .container3 #icon{
-    position: relative;
-    left: 150px;
-    margin: 50px;
-    
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; 
+    margin-left: 150px;
+}
+.container3 .ico:hover{
+-webkit-filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
+filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)contrast(104%);
 }
