@@ -5,6 +5,7 @@ body{
     background-color: black;
     color:white;
 }
+
 /*--------------------- fonts -------------------------- */
 @font-face {
     font-family: myFont;
@@ -43,10 +44,11 @@ nav a{
     padding: 0 3px   0 3px;
     font-family: monFont;
     font-size: 18px;
-    cursor:default;
+    cursor:pointer;
     
 }
 @media screen and  (max-width:767px){
+    
     nav a{
         position: relative;
         top: 40px;
@@ -57,7 +59,7 @@ nav a{
         padding: 0 3px   0 3px;
         font-family: monFont;
         font-size: 18px;
-        cursor:default;
+        cursor:pointer;
         
     }
     header{
@@ -70,6 +72,33 @@ nav a{
         width: auto;
     
     }
+    
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: slide-in 2s ease-in-out; /* Durée et effet de transition */
+  }
+  
+ 
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%); /* Début de la translation */
+    }
+    100% {
+      transform: translateX(0); /* Fin de la translation */
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0; /* Début de l'opacité à 0 */
+    }
+    100% {
+      opacity: 1; /* Fin de l'opacité à 1 */
+    }
+  }
     .head_content{
         border-left: 3px solid    rgba(123, 123, 123, 0.1);
         border-right: 3px groove  rgba(207, 207, 207, 0.1);
@@ -81,6 +110,9 @@ nav a{
         width: 58%;
         font-family: monFont;
         font-size: 18px;
+    }
+    header  aside img.icon_reseaux{
+        margin-left: 25px;
     }
     .head_content strong{
         font-size: 18px;
@@ -103,14 +135,14 @@ nav a{
     }
     
     header  aside{
-        position: absolute;
+        position: fixed;
         top: 45%;
         left: 89%;
-        z-index: 1000;
         display: grid;
         gap: 25px;
         margin-left: -50px;
-        transform: translate(30%);
+        z-index: 1000;
+      
     }
     
     
@@ -173,19 +205,24 @@ nav a{
         margin-left: 30%; 
        
     }
-    main .makedown:hover{
-        margin-top: -5px;
-    }
+   
     
-    main #cinema article img:hover{
-        width: 250px;
-        height: 400px;
+    main #cinema article img,.desc{
+        transition: all .6s;
+        cursor: pointer;
+    }
+     main .nemesis article img,main .alliés article img{
+        transition: all .6s;
+        cursor: pointer;
         
+    }
+    main #cinema article img:hover{
+        transform: scale(1.3, 1.2);
+        padding-bottom: 5%;
     }
      main .nemesis article img:hover,main .alliés article img:hover{
-        width: 250px;
-        height: 400px;
-        
+        transform: scale(1.3, 1.2);
+        padding-bottom: 5%;
     }
     div.container .deco{
         position:relative; 
@@ -489,6 +526,33 @@ filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)co
 }
 }
 @media screen and (min-width:768px)and (max-width:1023px){
+    
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: slide-in 2s ease-in-out; /* Durée et effet de transition */
+  }
+  
+
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%); /* Début de la translation */
+    }
+    100% {
+      transform: translateX(0); /* Fin de la translation */
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0; /* Début de l'opacité à 0 */
+    }
+    100% {
+      opacity: 1; /* Fin de l'opacité à 1 */
+    }
+  }
     header{
         background-image: url('Assets/Illustrations/Bathome1.png');
         background-repeat: no-repeat;
@@ -514,6 +578,9 @@ filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)co
     .head_content strong{
         font-size: 18px;
     }
+    header  aside img.icon_reseaux{
+        margin-left: 25px;
+    }
     header .buttons .btn{
         background-image: linear-gradient(to top right , #eddebf, #890008);
         border: none;
@@ -532,7 +599,7 @@ filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)co
     }
     
     header  aside{
-        position: absolute;
+        position: fixed;
         top: 45%;
         left: 89%;
         z-index: 1000;
@@ -616,19 +683,22 @@ main .makedown{
     margin-right: -20px; 
     margin-top: 10px;
 }
-main .makedown:hover{
-    margin-top: -5px;
-}
 
+main #cinema article img{
+    transition: all .6s;
+    cursor: pointer;
+}
+ main .nemesis article img,main .alliés article img{
+    transition: all .6s;
+    cursor: pointer;
+}
 main #cinema article img:hover{
-    width: 250px;
-    height: 400px;
-    
+    transform: scale(1.3, 1.2);
+    padding-bottom: 5%;
 }
  main .nemesis article img:hover,main .alliés article img:hover{
-    width: 250px;
-    height: 400px;
-    
+    transform: scale(1.3, 1.2);
+    padding-bottom: 5%;
 }
 /* section Allié */
 img.Al_ph{
@@ -958,6 +1028,33 @@ filter: invert(4%)sepia(100%)saturate(1680%)hue-rotate(352deg)brightness(109%)co
 }
 /* *********************DESKTOP******************************* */
  @media screen and (min-width:1024px){
+    
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: slide-in 2s ease-in-out; /* Durée et effet de transition */
+  }
+  
+  
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%); /* Début de la translation */
+    }
+    100% {
+      transform: translateX(0); /* Fin de la translation */
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0; /* Début de l'opacité à 0 */
+    }
+    100% {
+      opacity: 1; /* Fin de l'opacité à 1 */
+    }
+  }
 header{
     background-image: url('Assets/Illustrations/Bathome1.png');
     background-repeat: no-repeat;
@@ -1001,18 +1098,18 @@ header .buttons .btn:hover{
 }
 
 header  aside{
-    position: absolute;
+    position: fixed;
     top: 45%;
     left: 89%;
-    z-index: 1000;
     display: grid;
+    z-index: 1000;
     gap: 25px;
     margin-left: -50px;
     transform: translate(30%);
 }
 
 
-header  aside img.ico_reseaux{
+header  aside img.icon_reseaux{
     margin-left: 25px;
 }
 header  aside img:hover{
@@ -1081,14 +1178,22 @@ main .makedown{
     margin-right: -20px; 
     margin-top: 20px;
 }
-main .makedown:hover{
-    margin-top: -5px;
-}
 
-main #cinema article img:hover, main .nemesis article img:hover,main .alliés article img:hover{
-    width: 250px;
-    height: 400px;
-    margin-bottom: -15px;
+
+main #cinema article img{
+    transition: all .6s;
+}
+ main .nemesis article img,main .alliés article img{
+    transition: all .6s;
+    
+}
+main #cinema article img:hover{
+    transform: scale(1.3, 1.2);
+    padding-bottom: 5%;
+}
+ main .nemesis article img:hover,main .alliés article img:hover{
+    transform: scale(1.3, 1.2);
+    padding-bottom: 5%;
 }
 main .nemesis {
     margin-top: 155px;
